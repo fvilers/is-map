@@ -1,19 +1,11 @@
-import { jest } from "@jest/globals";
-import sayHello from "../src";
+import isMap from "../src/isMap";
 
-describe("sayHello", () => {
-  afterEach(() => {
-    jest.restoreAllMocks();
+describe("isMap", () => {
+  test("should return true for a map type", () => {
+    expect(isMap(new Map())).toBe(true);
   });
 
-  test("should say hello to the console", () => {
-    // Arrange
-    const spy = jest.spyOn(console, "log");
-
-    // Act
-    sayHello();
-
-    // Assert
-    expect(spy).toHaveBeenCalled();
+  test("should return false for a non map type", () => {
+    expect(isMap({})).toBe(false);
   });
 });
