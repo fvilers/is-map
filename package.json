@@ -1,6 +1,6 @@
 {
   "name": "@fvilers/is-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript type guard that validates if the given value is a Map",
   "main": "dist/src/is-map.js",
   "types": "dist/src/is-map.d.ts",
