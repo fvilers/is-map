@@ -1,4 +1,4 @@
-import isMap from "../src/is-map";
+import { isMap } from "../src/is-map.js";
 
 describe("isMap", () => {
   test("should return true for a map type", () => {

@@ -14,10 +14,14 @@ or
 yarn add @fvilers/is-map
 ```
 
+# ECMAScript module
+
+Starting with version 2.0.0, this library will be published as an ECMAScript module.
+
 ## Usage
 
 ```ts
-import isMap from "@fvilers/is-map";
+import { isMap } from "@fvilers/is-map";
 
 const variable: any = new map();
 
